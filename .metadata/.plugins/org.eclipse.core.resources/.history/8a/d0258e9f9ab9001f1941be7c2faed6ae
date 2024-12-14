@@ -1,0 +1,10 @@
+spring.application.name=AllenPader_FinalTest_COMP303
+server.port=8083
+#DataSource Configuration
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.url=jdbc:mysql://localhost:3306/bankdata
+spring.datasource.username=root
+spring.datasource.password=4paws2ears1tail
+#Hibernate Configuration
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true

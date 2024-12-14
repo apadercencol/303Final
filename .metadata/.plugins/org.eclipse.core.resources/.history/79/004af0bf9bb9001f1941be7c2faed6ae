@@ -1,0 +1,80 @@
+package com.example.bank;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "Bank") // Specifies the table name in the database
+public class Bank {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // Auto-incremented ID
+    private Long bankId;
+
+    private String bankName;
+    private int bankYear;
+    private int bankEmp;
+    private String bankAddress;
+    private int bankBranches;
+    private int bankATMs;
+
+    // Getters and Setters
+    public Long getBankId() {
+        return bankId;
+    }
+
+    public void setBankId(Long bankId) {
+        this.bankId = bankId;
+    }
+
+    public String getBankName() {
+        return bankName;
+    }
+
+    public void setBankName(String bankName) {
+        this.bankName = bankName;
+    }
+
+    public int getBankYear() {
+        return bankYear;
+    }
+
+    public void setBankYear(int bankYear) {
+        this.bankYear = bankYear;
+    }
+
+    public int getBankEmp() {
+        return bankEmp;
+    }
+
+    public void setBankEmp(int bankEmp) {
+        this.bankEmp = bankEmp;
+    }
+
+    public String getBankAddress() {
+        return bankAddress;
+    }
+
+    public void setBankAddress(String bankAddress) {
+        this.bankAddress = bankAddress;
+    }
+
+    public int getBankBranches() {
+        return bankBranches;
+    }
+
+    public void setBankBranches(int bankBranches) {
+        this.bankBranches = bankBranches;
+    }
+
+    public int getBankATMs() {
+        return bankATMs;
+    }
+
+    public void setBankATMs(int bankATMs) {
+        this.bankATMs = bankATMs;
+    }
+}
